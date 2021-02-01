@@ -1,0 +1,50 @@
+body{
+	background: #FFDAC5;	/*#272343*/
+	font-family: 'Roboto Slab', serif;
+}
+
+.heading{
+	color: #799351;		/*#bae8e8*/
+}
+.row{
+	width: 100%;	/*para completar os minutos e segundos no local correto*/
+}
+
+.information{
+	text-align: justify;
+	background: #ffffff;
+}
+
+.timer{
+	color: #a20a0a;		/*#fff*/
+	text-align: center;
+	width: 15rem;
+	height: 15rem;
+	border: 5px solid #a20a0a;		/* #fff*/
+	border-radius: 10rem;
+	display: flex;				/* essa linha e de baixo alinha o timer no centro*/
+	justify-content: center;	/*alinha horizontalmente*/
+	align-items: center;		/*alinha verticalmente*/
+}
+
+.fa-play, .fa-redo-alt {
+	color: #000000;		/*#e3f6f5*/
+	/*border: 2px solid transparent;*/
+	padding: 1rem;
+	border-radius: 2rem;
+}
+
+.fa-play:hover, .fa-redo-alt:hover {
+	color: #7a7a7a;						/*#bae8e8*/
+	border: 2px solid transparent;		/*#bae8e8*/
+	transition: 0.3s ease;
+}
+
+.show_message{
+	display: block;
+	padding: 1rem 0;
+	color: #799351;				/*#272343*/
+	background: #f6eec9;		/*#e3f6f5*/		
+	border-radius: 0.5rem;
+	transition: 0.5s ease;
+}

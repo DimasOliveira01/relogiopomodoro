@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+<!-- Bootstrap CSS -->
+<link 
+	rel="stylesheet" 
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"
+/>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- My JS -->
+<script src="js/main.js"></script>
+
+<!-- My CSS -->
+<link rel="stylesheet" href="css/style.css"/>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+
+
+<title>Pomodoro</title>
+</head>
+<body onload="template()">
+	
+	<div class="container">
+		<!-- Heading -->
+		<h1 class="text-center my-5 heading">Relógio Pomodoro</h1>
+		
+		<!-- Main Timer -->
+		<div class="container timer">
+			<div class="row">
+				<div class="col-5">
+					<h1 id="minutes"></h1>
+				</div>
+				<div class="col-2">
+					<h1>:</h1>
+				</div>
+				<div class="col-5">
+					<h1 id="seconds"></h1>
+				</div>
+			</div>			
+		</div>
+		
+		<div>
+			<h3 id="done" class="text-center my-5"></h3>
+		</div>
+		
+		<!-- Start and reset buttons -->
+		<div class="container d-flex justify-content-center align-items-center my-5">
+			<button class="btn" onclick="start()"><i class="fas fa-play fa-2x"></i></button>	<!-- adicionei fa-2x para deixar no mesmo tamanho os dois ícones -->
+			<a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>	<!-- adicionei fa-2x para deixar no mesmo tamanho os dois ícones -->
+		</div>
+		
+		
+	</div>
+	
+	<div class="container information">
+		<h2>O que é o Relógio Pomodoro?</h2>
+		<p>O Relógio Pomodoro é um temporizador pomodoro personalizável que funciona no navegador desktop e móvel. O objetivo deste aplicativo é ajudá-lo a se concentrar em qualquer tarefa em que esteja trabalhando, como estudar, escrever ou programar. Este aplicativo é inspirado na Técnica Pomodoro.</p>
+		<h2>Técnica Pomodoro</h2>
+		<p>A Técnica Pomodoro é um método de gerenciamento de tempo desenvolvido por Francesco Cirillo no final dos anos 1980. A técnica consiste na utilização de um relógio para dividir o trabalho em períodos de 25 minutos, separados por breves intervalos. O relógio pomodoro deriva seu nome da palavra italiana pomodoro (tomate), como referência ao popular cronômetro gastronômico na forma dessa fruta. O método é baseado na ideia de que pausas frequentes podem aumentar a agilidade mental. <i> - Wikipedia</i></p>
+		<h2>Como utilizar o Relógio Pomodoro?</h2>
+		<ol>
+			<li>Defina uma tarefa; </li>
+			<li>Inicie o Relógio Pomodoro; </li>
+			<li>Concentre-se em realizar a tarefa por 25 minutos; </li>
+			<li>Inicie o período de descanso por 5 minutos; </li>
+			<li>Após o período de descanso clique no botão atualizar; </li>
+			<li>Inicie novamente no passo 1. </li>
+		</ol>
+	</div>
+	
+
+</body>
+</html>
